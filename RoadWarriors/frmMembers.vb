@@ -1,11 +1,11 @@
-﻿Public Class formEvents
-    Private Sub formEvents_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+﻿Public Class frmMembers
+    Private Sub formMembers_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 
     '-----BUTTONS----
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
-        formMain.Show()
+        frnMain.Show()
         Me.Hide()
     End Sub
 

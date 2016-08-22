@@ -72,31 +72,34 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormEvents.Designer.vb">
-      <DependentUpon>FormEvents.vb</DependentUpon>
+    <Compile Include="Events.vb" />
+    <Compile Include="EventsDB.vb" />
+    <Compile Include="frmEvents.Designer.vb">
+      <DependentUpon>frmEvents.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormEvents.vb">
+    <Compile Include="frmEvents.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMain.vb">
+    <Compile Include="frnMain.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMain.Designer.vb">
-      <DependentUpon>FormMain.vb</DependentUpon>
+    <Compile Include="frnMain.Designer.vb">
+      <DependentUpon>frnMain.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMembers.Designer.vb">
-      <DependentUpon>FormMembers.vb</DependentUpon>
+    <Compile Include="frmMembers.Designer.vb">
+      <DependentUpon>frmMembers.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormMembers.vb">
+    <Compile Include="frmMembers.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormResults.Designer.vb">
-      <DependentUpon>FormResults.vb</DependentUpon>
+    <Compile Include="frmResults.Designer.vb">
+      <DependentUpon>frmResults.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormResults.vb">
+    <Compile Include="frmResults.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Members.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -114,17 +117,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FormEvents.resx">
-      <DependentUpon>FormEvents.vb</DependentUpon>
+    <EmbeddedResource Include="frmEvents.resx">
+      <DependentUpon>frmEvents.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMain.resx">
-      <DependentUpon>FormMain.vb</DependentUpon>
+    <EmbeddedResource Include="frnMain.resx">
+      <DependentUpon>frnMain.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMembers.resx">
-      <DependentUpon>FormMembers.vb</DependentUpon>
+    <EmbeddedResource Include="frmMembers.resx">
+      <DependentUpon>frmMembers.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormResults.resx">
-      <DependentUpon>FormResults.vb</DependentUpon>
+    <EmbeddedResource Include="frmResults.resx">
+      <DependentUpon>frmResults.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

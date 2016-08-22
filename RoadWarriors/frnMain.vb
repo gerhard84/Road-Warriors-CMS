@@ -1,17 +1,17 @@
-﻿Public Class formMain
+﻿Public Class frnMain
     '-----BUTTONS----
     Private Sub btnResults_Click(sender As Object, e As EventArgs) Handles btnResults.Click
-        formResults.Show()
+        frmResults.Show()
         Me.Hide()
     End Sub
     '-----BUTTONS----
     Private Sub btnManEvent_Click(sender As Object, e As EventArgs) Handles btnManEvent.Click
-        formEvents.Show()
+        frmEvents.Show()
         Me.Hide()
     End Sub
     '-----BUTTONS----
     Private Sub btnManMembers_Click(sender As Object, e As EventArgs) Handles btnManMembers.Click
-        formMembers.Show()
+        frmMembers.Show()
         Me.Hide()
     End Sub
     '-----BUTTONS----
