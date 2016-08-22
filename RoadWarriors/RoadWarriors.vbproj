@@ -72,8 +72,8 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Events.vb" />
-    <Compile Include="EventsDB.vb" />
+    <Compile Include="RaceEvent.vb" />
+    <Compile Include="RaceEventDB.vb" />
     <Compile Include="frmEvents.Designer.vb">
       <DependentUpon>frmEvents.vb</DependentUpon>
     </Compile>

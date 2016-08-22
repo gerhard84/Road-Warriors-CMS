@@ -4,7 +4,7 @@
 '4. Location of the event.
 '5. Distance.
 
-Public Class Events
+Public Class RaceEvent
     'Fields
     Public Property m_Title As String
     Public Property m_Time As Date
