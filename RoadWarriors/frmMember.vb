@@ -1,7 +1,8 @@
-﻿Public Class frmResults
-    Private Sub FormResults_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+﻿Public Class frmMember
+    Private Sub formMembers_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
     '-----BUTTONS----
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         frnMain.Show()
@@ -14,5 +15,4 @@
             Application.Exit()
         End If
     End Sub
-
 End Class

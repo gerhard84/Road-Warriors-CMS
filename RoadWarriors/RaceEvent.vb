@@ -4,6 +4,8 @@
 '4. Location of the event.
 '5. Distance.
 
+Imports RoadWarriors
+
 Public Class RaceEvent
     'Fields
     Public Property m_Title As String
@@ -89,4 +91,7 @@ Public Class RaceEvent
         Return text
     End Function
 
+    Public Shared Widening Operator CType(v As RaceEvent) As List(Of Object)
+        Throw New NotImplementedException()
+    End Operator
 End Class

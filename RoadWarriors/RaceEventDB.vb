@@ -2,15 +2,16 @@
 
 Public Class RaceEventDB
     ' Use file in Bin directory
-    Private Const Dir As String = ""
+    'Private Const Dir As String = "..\"
 
-    Private Const Path As String = Dir & "RaceEventsDB.txt"
+    'Private Const Path As String = Dir & "RaceEventsDB.txt"
+    Private Const Path As String = "RaceEventsDB.txt"
 
     Public Shared Function GetRaceEvent() As List(Of RaceEvent)
 
-        If Not Directory.Exists(Dir) Then
-            Directory.CreateDirectory(Dir)
-        End If
+        'If Not Directory.Exists(Dir) Then
+        '    Directory.CreateDirectory(Dir)
+        'End If
 
         Dim textIn As New StreamReader(
             New FileStream(Path, FileMode.OpenOrCreate, FileAccess.Read))

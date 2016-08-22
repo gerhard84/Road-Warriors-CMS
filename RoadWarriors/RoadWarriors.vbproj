@@ -72,12 +72,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmEventAdd.Designer.vb">
+      <DependentUpon>frmEventAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEventAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="RaceEvent.vb" />
     <Compile Include="RaceEventDB.vb" />
-    <Compile Include="frmEvents.Designer.vb">
-      <DependentUpon>frmEvents.vb</DependentUpon>
+    <Compile Include="frmEvent.Designer.vb">
+      <DependentUpon>frmEvent.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmEvents.vb">
+    <Compile Include="frmEvent.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frnMain.vb">
@@ -87,19 +93,19 @@
       <DependentUpon>frnMain.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmMembers.Designer.vb">
-      <DependentUpon>frmMembers.vb</DependentUpon>
+    <Compile Include="frmMember.Designer.vb">
+      <DependentUpon>frmMember.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmMembers.vb">
+    <Compile Include="frmMember.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmResults.Designer.vb">
-      <DependentUpon>frmResults.vb</DependentUpon>
+    <Compile Include="frmResult.Designer.vb">
+      <DependentUpon>frmResult.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmResults.vb">
+    <Compile Include="frmResult.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Members.vb" />
+    <Compile Include="Member.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -115,19 +121,23 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Validator.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmEvents.resx">
-      <DependentUpon>frmEvents.vb</DependentUpon>
+    <EmbeddedResource Include="frmEvent.resx">
+      <DependentUpon>frmEvent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEventAdd.resx">
+      <DependentUpon>frmEventAdd.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frnMain.resx">
       <DependentUpon>frnMain.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmMembers.resx">
-      <DependentUpon>frmMembers.vb</DependentUpon>
+    <EmbeddedResource Include="frmMember.resx">
+      <DependentUpon>frmMember.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmResults.resx">
-      <DependentUpon>frmResults.vb</DependentUpon>
+    <EmbeddedResource Include="frmResult.resx">
+      <DependentUpon>frmResult.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
