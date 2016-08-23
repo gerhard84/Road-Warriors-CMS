@@ -65,7 +65,7 @@ Partial Class frmEvent
         '
         'btnBack
         '
-        Me.btnBack.Location = New System.Drawing.Point(345, 46)
+        Me.btnBack.Location = New System.Drawing.Point(345, 35)
         Me.btnBack.Name = "btnBack"
         Me.btnBack.Size = New System.Drawing.Size(107, 57)
         Me.btnBack.TabIndex = 2
@@ -74,7 +74,7 @@ Partial Class frmEvent
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(458, 46)
+        Me.btnExit.Location = New System.Drawing.Point(458, 35)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(107, 57)
         Me.btnExit.TabIndex = 3
@@ -83,7 +83,7 @@ Partial Class frmEvent
         '
         'btnAdd
         '
-        Me.btnAdd.Location = New System.Drawing.Point(6, 46)
+        Me.btnAdd.Location = New System.Drawing.Point(6, 35)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(107, 57)
         Me.btnAdd.TabIndex = 11
@@ -92,16 +92,16 @@ Partial Class frmEvent
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(119, 46)
+        Me.Button2.Location = New System.Drawing.Point(119, 35)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(107, 57)
         Me.Button2.TabIndex = 12
-        Me.Button2.Text = "Edit Event"
+        Me.Button2.Text = "Manage Event"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'btnDelete
         '
-        Me.btnDelete.Location = New System.Drawing.Point(232, 46)
+        Me.btnDelete.Location = New System.Drawing.Point(232, 35)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(107, 57)
         Me.btnDelete.TabIndex = 13
@@ -144,7 +144,7 @@ Partial Class frmEvent
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "frmEvent"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "FormEvents"
+        Me.Text = "Road Warriors - Events"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)

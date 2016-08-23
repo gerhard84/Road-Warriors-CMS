@@ -191,7 +191,7 @@ Partial Class frmNewEvent
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "frmNewEvent"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "frmEventAdd"
+        Me.Text = "Road Warriors - Event Add"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.MenuStrip1.ResumeLayout(False)

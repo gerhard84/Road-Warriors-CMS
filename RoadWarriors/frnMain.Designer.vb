@@ -32,41 +32,45 @@ Partial Class frnMain
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DatabaseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.MenuStrip1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnManEvent
         '
-        Me.btnManEvent.Location = New System.Drawing.Point(12, 113)
+        Me.btnManEvent.Location = New System.Drawing.Point(245, 21)
         Me.btnManEvent.Name = "btnManEvent"
-        Me.btnManEvent.Size = New System.Drawing.Size(317, 53)
+        Me.btnManEvent.Size = New System.Drawing.Size(126, 88)
         Me.btnManEvent.TabIndex = 0
         Me.btnManEvent.Text = "Manage Events"
         Me.btnManEvent.UseVisualStyleBackColor = True
         '
         'btnManMembers
         '
-        Me.btnManMembers.Location = New System.Drawing.Point(12, 180)
+        Me.btnManMembers.Location = New System.Drawing.Point(484, 21)
         Me.btnManMembers.Name = "btnManMembers"
-        Me.btnManMembers.Size = New System.Drawing.Size(318, 53)
+        Me.btnManMembers.Size = New System.Drawing.Size(126, 88)
         Me.btnManMembers.TabIndex = 1
         Me.btnManMembers.Text = "Manage Members"
         Me.btnManMembers.UseVisualStyleBackColor = True
         '
         'btnResults
         '
-        Me.btnResults.Location = New System.Drawing.Point(12, 46)
+        Me.btnResults.Location = New System.Drawing.Point(6, 21)
         Me.btnResults.Name = "btnResults"
-        Me.btnResults.Size = New System.Drawing.Size(317, 53)
+        Me.btnResults.Size = New System.Drawing.Size(126, 88)
         Me.btnResults.TabIndex = 2
         Me.btnResults.Text = "Race Results"
         Me.btnResults.UseVisualStyleBackColor = True
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(13, 247)
+        Me.btnExit.Location = New System.Drawing.Point(723, 21)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(317, 53)
+        Me.btnExit.Size = New System.Drawing.Size(126, 88)
         Me.btnExit.TabIndex = 3
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = True
@@ -77,7 +81,7 @@ Partial Class frnMain
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.DatabaseToolStripMenuItem, Me.AboutToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(342, 28)
+        Me.MenuStrip1.Size = New System.Drawing.Size(881, 28)
         Me.MenuStrip1.TabIndex = 4
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -106,22 +110,47 @@ Partial Class frnMain
         Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(62, 24)
         Me.AboutToolStripMenuItem.Text = "About"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.RoadWarriors.My.Resources.Resources.back2_small1
+        Me.PictureBox1.InitialImage = Global.RoadWarriors.My.Resources.Resources.back2_small1
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 31)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(857, 482)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PictureBox1.TabIndex = 5
+        Me.PictureBox1.TabStop = False
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.btnResults)
+        Me.GroupBox1.Controls.Add(Me.btnManEvent)
+        Me.GroupBox1.Controls.Add(Me.btnExit)
+        Me.GroupBox1.Controls.Add(Me.btnManMembers)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 519)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(857, 115)
+        Me.GroupBox1.TabIndex = 6
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Club Management"
+        '
         'frnMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(342, 313)
-        Me.Controls.Add(Me.btnExit)
-        Me.Controls.Add(Me.btnResults)
-        Me.Controls.Add(Me.btnManMembers)
-        Me.Controls.Add(Me.btnManEvent)
+        Me.ClientSize = New System.Drawing.Size(881, 646)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "frnMain"
-        Me.Text = "Road Warriors - Main "
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Road Warriors - Club Management"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -136,4 +165,6 @@ Partial Class frnMain
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents DatabaseToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents GroupBox1 As GroupBox
 End Class

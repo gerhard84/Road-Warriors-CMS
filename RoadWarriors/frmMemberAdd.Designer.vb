@@ -22,11 +22,12 @@ Partial Class frmMemberAdd
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMemberAdd))
         Me.grpNewMem = New System.Windows.Forms.GroupBox()
         Me.lblMemID = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.rdbFemale = New System.Windows.Forms.RadioButton()
-        Me.rdbMale = New System.Windows.Forms.RadioButton()
+        Me.rbtnFemale = New System.Windows.Forms.RadioButton()
+        Me.rbtnMale = New System.Windows.Forms.RadioButton()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.dteDob = New System.Windows.Forms.DateTimePicker()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -46,8 +47,8 @@ Partial Class frmMemberAdd
         '
         Me.grpNewMem.Controls.Add(Me.lblMemID)
         Me.grpNewMem.Controls.Add(Me.Label1)
-        Me.grpNewMem.Controls.Add(Me.rdbFemale)
-        Me.grpNewMem.Controls.Add(Me.rdbMale)
+        Me.grpNewMem.Controls.Add(Me.rbtnFemale)
+        Me.grpNewMem.Controls.Add(Me.rbtnMale)
         Me.grpNewMem.Controls.Add(Me.Label3)
         Me.grpNewMem.Controls.Add(Me.dteDob)
         Me.grpNewMem.Controls.Add(Me.Label2)
@@ -82,27 +83,28 @@ Partial Class frmMemberAdd
         Me.Label1.TabIndex = 41
         Me.Label1.Text = "Member ID:"
         '
-        'rdbFemale
+        'rbtnFemale
         '
-        Me.rdbFemale.AutoSize = True
-        Me.rdbFemale.Location = New System.Drawing.Point(456, 78)
-        Me.rdbFemale.Name = "rdbFemale"
-        Me.rdbFemale.Size = New System.Drawing.Size(75, 21)
-        Me.rdbFemale.TabIndex = 40
-        Me.rdbFemale.TabStop = True
-        Me.rdbFemale.Text = "Female"
-        Me.rdbFemale.UseVisualStyleBackColor = True
+        Me.rbtnFemale.AutoSize = True
+        Me.rbtnFemale.Location = New System.Drawing.Point(456, 78)
+        Me.rbtnFemale.Name = "rbtnFemale"
+        Me.rbtnFemale.Size = New System.Drawing.Size(75, 21)
+        Me.rbtnFemale.TabIndex = 40
+        Me.rbtnFemale.TabStop = True
+        Me.rbtnFemale.Text = "Female"
+        Me.rbtnFemale.UseVisualStyleBackColor = True
         '
-        'rdbMale
+        'rbtnMale
         '
-        Me.rdbMale.AutoSize = True
-        Me.rdbMale.Location = New System.Drawing.Point(391, 78)
-        Me.rdbMale.Name = "rdbMale"
-        Me.rdbMale.Size = New System.Drawing.Size(59, 21)
-        Me.rdbMale.TabIndex = 39
-        Me.rdbMale.TabStop = True
-        Me.rdbMale.Text = "Male"
-        Me.rdbMale.UseVisualStyleBackColor = True
+        Me.rbtnMale.AllowDrop = True
+        Me.rbtnMale.AutoSize = True
+        Me.rbtnMale.Location = New System.Drawing.Point(391, 78)
+        Me.rbtnMale.Name = "rbtnMale"
+        Me.rbtnMale.Size = New System.Drawing.Size(59, 21)
+        Me.rbtnMale.TabIndex = 39
+        Me.rbtnMale.TabStop = True
+        Me.rbtnMale.Text = "Male"
+        Me.rbtnMale.UseVisualStyleBackColor = True
         '
         'Label3
         '
@@ -203,9 +205,10 @@ Partial Class frmMemberAdd
         Me.ClientSize = New System.Drawing.Size(596, 253)
         Me.Controls.Add(Me.grpNewMem)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "frmMemberAdd"
-        Me.Text = "frmMemberAdd"
+        Me.Text = "Road Warriors - Member Add"
         Me.grpNewMem.ResumeLayout(False)
         Me.grpNewMem.PerformLayout()
         Me.MenuStrip1.ResumeLayout(False)
@@ -226,8 +229,8 @@ Partial Class frmMemberAdd
     Friend WithEvents btnBack As Button
     Friend WithEvents lblMemID As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents rdbFemale As RadioButton
-    Friend WithEvents rdbMale As RadioButton
+    Friend WithEvents rbtnFemale As RadioButton
+    Friend WithEvents rbtnMale As RadioButton
     Friend WithEvents Label3 As Label
     Friend WithEvents dteDob As DateTimePicker
     Friend WithEvents Label2 As Label

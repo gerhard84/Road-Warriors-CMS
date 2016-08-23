@@ -44,7 +44,6 @@
         frnMain.Show()
         Me.Hide()
     End Sub
-
     '-----BUTTONS----
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         If MsgBox("Are you sure you want to exit?", MsgBoxStyle.OkCancel) = MsgBoxResult.Ok Then
