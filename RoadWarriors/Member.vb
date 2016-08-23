@@ -11,8 +11,9 @@
 Imports RoadWarriors
 
 Public Class Member
+
     'Fields
-    Public Property m_MemberID As Integer
+    Public Property m_MemberID As String
     Public Property m_Name As String
     Public Property m_Surname As String
     Public Property m_DoB As Date
@@ -25,7 +26,7 @@ Public Class Member
     End Sub
 
     'Custom Constructor
-    Public Sub New(memberID As Integer,
+    Public Sub New(memberID As String,
                    name As String,
                    surname As String,
                    dob As Date,
@@ -40,11 +41,11 @@ Public Class Member
     End Sub
 
     'The MemberID Property
-    Public Property MemberID As Integer
+    Public Property MemberID As String
         Get
             Return m_MemberID
         End Get
-        Set(value As Integer)
+        Set(value As String)
             m_MemberID = value
         End Set
     End Property
@@ -98,8 +99,6 @@ Public Class Member
             m_JoinDate = value
         End Set
     End Property
-
-
 
     Public Function GetDisplayText(sep As String) As String
         Dim text As String = MemberID & sep &

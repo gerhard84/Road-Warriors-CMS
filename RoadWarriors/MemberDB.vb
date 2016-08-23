@@ -1,17 +1,10 @@
 ﻿Imports System.IO
 
 Public Class MemberDB
-    ' Use file in Bin directory
-    'Private Const Dir As String = "..\"
 
-    'Private Const Path As String = Dir & "RaceEventsDB.txt"
     Private Const Path As String = "MemberDB.txt"
 
     Public Shared Function GetMember() As List(Of Member)
-
-        'If Not Directory.Exists(Dir) Then
-        '    Directory.CreateDirectory(Dir)
-        'End If
 
         Dim textIn As New StreamReader(
             New FileStream(Path, FileMode.OpenOrCreate, FileAccess.Read))
