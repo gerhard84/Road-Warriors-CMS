@@ -26,11 +26,13 @@ Partial Class frmMember
         Me.btnExit = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
+        Me.lstMembers = New System.Windows.Forms.ListBox()
+        Me.btnDelete = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(392, 530)
+        Me.btnExit.Location = New System.Drawing.Point(570, 484)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(75, 23)
         Me.btnExit.TabIndex = 3
@@ -39,7 +41,7 @@ Partial Class frmMember
         '
         'btnBack
         '
-        Me.btnBack.Location = New System.Drawing.Point(296, 530)
+        Me.btnBack.Location = New System.Drawing.Point(444, 484)
         Me.btnBack.Name = "btnBack"
         Me.btnBack.Size = New System.Drawing.Size(75, 23)
         Me.btnBack.TabIndex = 2
@@ -48,18 +50,38 @@ Partial Class frmMember
         '
         'btnAdd
         '
-        Me.btnAdd.Location = New System.Drawing.Point(89, 447)
+        Me.btnAdd.Location = New System.Drawing.Point(91, 496)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(107, 57)
         Me.btnAdd.TabIndex = 12
         Me.btnAdd.Text = "Add Member"
         Me.btnAdd.UseVisualStyleBackColor = True
         '
+        'lstMembers
+        '
+        Me.lstMembers.FormattingEnabled = True
+        Me.lstMembers.ItemHeight = 16
+        Me.lstMembers.Location = New System.Drawing.Point(101, 156)
+        Me.lstMembers.Name = "lstMembers"
+        Me.lstMembers.Size = New System.Drawing.Size(559, 292)
+        Me.lstMembers.TabIndex = 13
+        '
+        'btnDelete
+        '
+        Me.btnDelete.Location = New System.Drawing.Point(235, 496)
+        Me.btnDelete.Name = "btnDelete"
+        Me.btnDelete.Size = New System.Drawing.Size(107, 57)
+        Me.btnDelete.TabIndex = 14
+        Me.btnDelete.Text = "Delete Member"
+        Me.btnDelete.UseVisualStyleBackColor = True
+        '
         'frmMember
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(760, 605)
+        Me.Controls.Add(Me.btnDelete)
+        Me.Controls.Add(Me.lstMembers)
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnBack)
@@ -73,4 +95,6 @@ Partial Class frmMember
     Friend WithEvents btnExit As Button
     Friend WithEvents btnBack As Button
     Friend WithEvents btnAdd As Button
+    Friend WithEvents lstMembers As ListBox
+    Friend WithEvents btnDelete As Button
 End Class

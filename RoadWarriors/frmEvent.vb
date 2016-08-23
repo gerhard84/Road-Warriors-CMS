@@ -1,5 +1,4 @@
 ﻿Public Class frmEvent
-
     Dim raceEvents As List(Of RaceEvent)
 
     Private Sub frmEvent_Load(sender As Object, e As EventArgs) Handles MyBase.Load

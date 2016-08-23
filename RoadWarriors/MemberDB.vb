@@ -5,9 +5,9 @@ Public Class MemberDB
     'Private Const Dir As String = "..\"
 
     'Private Const Path As String = Dir & "RaceEventsDB.txt"
-    Private Const Path As String = "RaceEventsDB.txt"
+    Private Const Path As String = "MemberDB.txt"
 
-    Public Shared Function GetRaceEvent() As List(Of RaceEvent)
+    Public Shared Function GetMember() As List(Of Member)
 
         'If Not Directory.Exists(Dir) Then
         '    Directory.CreateDirectory(Dir)
@@ -16,37 +16,39 @@ Public Class MemberDB
         Dim textIn As New StreamReader(
             New FileStream(Path, FileMode.OpenOrCreate, FileAccess.Read))
 
-        Dim raceEvents As New List(Of RaceEvent)
+        Dim members As New List(Of Member)
 
         Do While textIn.Peek <> -1
             Dim row As String = textIn.ReadLine
             Dim columns As String() = row.Split(CChar("|"))
-            Dim raceEvent As New RaceEvent
-            raceEvent.Title = columns(0)
-            raceEvent.Time = CDate(columns(1))
-            raceEvent.Fee = CDec(columns(2))
-            raceEvent.Location = columns(3)
-            raceEvent.Distance = CInt(columns(4))
-            raceEvents.Add(raceEvent)
+            Dim member As New Member
+            member.MemberID = columns(0)
+            member.Name = columns(1)
+            member.Surname = columns(2)
+            member.DoB = CDate(columns(3))
+            member.Gender = columns(4)
+            member.JoinDate = CDate(columns(5))
+            members.Add(member)
         Loop
 
         textIn.Close()
 
-        Return raceEvents
+        Return members
 
     End Function
 
-    Public Shared Sub SaveRaceEvent(raceEvents As List(Of RaceEvent))
+    Public Shared Sub SaveMember(members As List(Of Member))
 
         Dim textOut As New StreamWriter(
             New FileStream(Path, FileMode.Create, FileAccess.Write))
 
-        For Each raceEvent As RaceEvent In raceEvents
-            textOut.Write(raceEvent.Title & "|")
-            textOut.Write(raceEvent.Time & "|")
-            textOut.Write(raceEvent.Fee & "|")
-            textOut.Write(raceEvent.Location & "|")
-            textOut.WriteLine(raceEvent.Distance)
+        For Each member As Member In members
+            textOut.Write(member.MemberID & "|")
+            textOut.Write(member.Name & "|")
+            textOut.Write(member.Surname & "|")
+            textOut.Write(member.DoB & "|")
+            textOut.Write(member.Gender & "|")
+            textOut.WriteLine(member.JoinDate)
         Next
 
         textOut.Close()

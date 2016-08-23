@@ -84,6 +84,7 @@
     <Compile Include="frmMemberAdd.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MemberDB.vb" />
     <Compile Include="RaceEvent.vb" />
     <Compile Include="frmEvent.Designer.vb">
       <DependentUpon>frmEvent.vb</DependentUpon>
