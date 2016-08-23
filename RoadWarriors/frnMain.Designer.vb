@@ -22,6 +22,7 @@ Partial Class frnMain
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frnMain))
         Me.btnManEvent = New System.Windows.Forms.Button()
         Me.btnManMembers = New System.Windows.Forms.Button()
         Me.btnResults = New System.Windows.Forms.Button()
@@ -105,7 +106,7 @@ Partial Class frnMain
         Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(62, 24)
         Me.AboutToolStripMenuItem.Text = "About"
         '
-        'formMain
+        'frnMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -115,8 +116,9 @@ Partial Class frnMain
         Me.Controls.Add(Me.btnManMembers)
         Me.Controls.Add(Me.btnManEvent)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "formMain"
+        Me.Name = "frnMain"
         Me.Text = "Road Warriors - Main "
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()

@@ -78,8 +78,13 @@
     <Compile Include="frmEventAdd.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmMemberAdd.Designer.vb">
+      <DependentUpon>frmMemberAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMemberAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="RaceEvent.vb" />
-    <Compile Include="RaceEventDB.vb" />
     <Compile Include="frmEvent.Designer.vb">
       <DependentUpon>frmEvent.vb</DependentUpon>
     </Compile>
@@ -121,6 +126,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="RaceEventDB.vb" />
     <Compile Include="Validator.vb" />
   </ItemGroup>
   <ItemGroup>
@@ -129,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmEventAdd.resx">
       <DependentUpon>frmEventAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMemberAdd.resx">
+      <DependentUpon>frmMemberAdd.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frnMain.resx">
       <DependentUpon>frnMain.vb</DependentUpon>

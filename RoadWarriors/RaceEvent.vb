@@ -85,13 +85,9 @@ Public Class RaceEvent
     Public Function GetDisplayText(sep As String) As String
         Dim text As String = Title & sep &
                              FormatDateTime(Time) & sep &
-                             FormatCurrency(Fee) & sep &
                              Location & sep &
-                             Distance
+                             Distance & sep &
+                             FormatCurrency(Fee)
         Return text
     End Function
-
-    Public Shared Widening Operator CType(v As RaceEvent) As List(Of Object)
-        Throw New NotImplementedException()
-    End Operator
 End Class

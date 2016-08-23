@@ -22,6 +22,7 @@ Partial Class frmNewEvent
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmNewEvent))
         Me.dateEvent = New System.Windows.Forms.DateTimePicker()
         Me.txtFee = New System.Windows.Forms.TextBox()
         Me.txtDistance = New System.Windows.Forms.TextBox()
@@ -33,10 +34,10 @@ Partial Class frmNewEvent
         Me.txtEvent = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnSave = New System.Windows.Forms.Button()
+        Me.btnBack = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.btnBack = New System.Windows.Forms.Button()
-        Me.btnSave = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -142,6 +143,25 @@ Partial Class frmNewEvent
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "New Event Details"
         '
+        'btnSave
+        '
+        Me.btnSave.Location = New System.Drawing.Point(149, 181)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(107, 57)
+        Me.btnSave.TabIndex = 26
+        Me.btnSave.Text = "Save Event"
+        Me.btnSave.UseVisualStyleBackColor = True
+        '
+        'btnBack
+        '
+        Me.btnBack.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.btnBack.Location = New System.Drawing.Point(302, 181)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(107, 57)
+        Me.btnBack.TabIndex = 27
+        Me.btnBack.Text = "Back"
+        Me.btnBack.UseVisualStyleBackColor = True
+        '
         'MenuStrip1
         '
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
@@ -158,25 +178,6 @@ Partial Class frmNewEvent
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(44, 24)
         Me.FileToolStripMenuItem.Text = "File"
         '
-        'btnBack
-        '
-        Me.btnBack.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.btnBack.Location = New System.Drawing.Point(302, 181)
-        Me.btnBack.Name = "btnBack"
-        Me.btnBack.Size = New System.Drawing.Size(107, 57)
-        Me.btnBack.TabIndex = 27
-        Me.btnBack.Text = "Back"
-        Me.btnBack.UseVisualStyleBackColor = True
-        '
-        'btnSave
-        '
-        Me.btnSave.Location = New System.Drawing.Point(149, 181)
-        Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(107, 57)
-        Me.btnSave.TabIndex = 26
-        Me.btnSave.Text = "Save Event"
-        Me.btnSave.UseVisualStyleBackColor = True
-        '
         'frmNewEvent
         '
         Me.AcceptButton = Me.btnSave
@@ -186,6 +187,7 @@ Partial Class frmNewEvent
         Me.ClientSize = New System.Drawing.Size(582, 285)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "frmNewEvent"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
