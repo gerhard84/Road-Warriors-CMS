@@ -103,6 +103,14 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmResultAdd.Designer.vb">
+      <DependentUpon>frmResultAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmResultAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result.vb" />
+    <Compile Include="ResultDB.vb" />
     <Compile Include="frmEventAdd.Designer.vb">
       <DependentUpon>frmEventAdd.vb</DependentUpon>
     </Compile>
