@@ -12,10 +12,13 @@
 Public Class Result
 
     'Fields
+    Public Property m_EvntName As String
+    Public Property m_EvntDate As Date
+    Public Property m_EvntLocation As String
     Public Property m_MemID As String
     Public Property m_MemName As String
-    Public Property m_EventName As String
-    Public Property m_RunTime As Integer
+    Public Property m_MemSurName As String
+    Public Property m_RunTime As String
 
 
     'Empty Constructor
@@ -24,15 +27,52 @@ Public Class Result
     End Sub
 
     'Custom Constructor
-    Public Sub New(memID As String,
-                   memName As String,
-                   eventName As String,
-                   runTime As Integer)
-        Me.MemID = memID
-        Me.MemName = memName
-        Me.EventName = eventName
+    Public Sub New(EvntName As String,
+                   EvntDate As Date,
+                   EvntLocation As String,
+                   MemID As String,
+                   MemName As String,
+                   MemSurName As String,
+                   runTime As String)
+        Me.EvntName = EvntName
+        Me.EvntDate = EvntDate
+        Me.EvntLocation = EvntLocation
+        Me.MemID = MemID
+        Me.MemName = MemName
+        Me.MemSurName = MemSurName
         Me.RunTime = runTime
     End Sub
+
+    'The EvntName Property
+    Public Property EvntName As String
+        Get
+            Return m_EvntName
+        End Get
+        Set(value As String)
+            m_EvntName = value
+        End Set
+    End Property
+
+    'The EvntDate Property
+    Public Property EvntDate As Date
+        Get
+            Return m_EvntDate
+        End Get
+        Set(value As Date)
+            m_EvntDate = value
+        End Set
+    End Property
+
+
+    'The EvntLocation Property
+    Public Property EvntLocation As String
+        Get
+            Return m_EvntLocation
+        End Get
+        Set(value As String)
+            m_EvntLocation = value
+        End Set
+    End Property
 
     'The MemID Property
     Public Property MemID As String
@@ -54,30 +94,33 @@ Public Class Result
         End Set
     End Property
 
-    'The EventName Property
-    Public Property EventName As String
+    'The MemSurName Property
+    Public Property MemSurName As String
         Get
-            Return m_EventName
+            Return m_MemSurName
         End Get
         Set(value As String)
-            m_EventName = value
+            m_MemSurName = value
         End Set
     End Property
 
     'The RunTime  Property
-    Public Property RunTime As Integer
+    Public Property RunTime As String
         Get
             Return m_RunTime
         End Get
-        Set(value As Integer)
+        Set(value As String)
             m_RunTime = value
         End Set
     End Property
 
     Public Function GetDisplayText(sep As String) As String
-        Dim text As String = MemID & sep &
+        Dim text As String = EvntName & sep &
+                             EvntDate & sep &
+                             EvntLocation & sep &
+                             MemID & sep &
                              MemName & sep &
-                             EventName & sep &
+                             MemSurName & sep &
                              RunTime
         Return text
     End Function

@@ -33,6 +33,13 @@ Partial Class frmResult
         Me.lstResults = New System.Windows.Forms.ListBox()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.grpManResult.SuspendLayout()
         Me.grpResults.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
@@ -99,6 +106,13 @@ Partial Class frmResult
         '
         'grpResults
         '
+        Me.grpResults.Controls.Add(Me.Label7)
+        Me.grpResults.Controls.Add(Me.Label6)
+        Me.grpResults.Controls.Add(Me.Label5)
+        Me.grpResults.Controls.Add(Me.Label4)
+        Me.grpResults.Controls.Add(Me.Label3)
+        Me.grpResults.Controls.Add(Me.Label2)
+        Me.grpResults.Controls.Add(Me.Label1)
         Me.grpResults.Controls.Add(Me.lstResults)
         Me.grpResults.Location = New System.Drawing.Point(9, 31)
         Me.grpResults.Name = "grpResults"
@@ -111,9 +125,9 @@ Partial Class frmResult
         '
         Me.lstResults.FormattingEnabled = True
         Me.lstResults.ItemHeight = 16
-        Me.lstResults.Location = New System.Drawing.Point(6, 31)
+        Me.lstResults.Location = New System.Drawing.Point(6, 47)
         Me.lstResults.Name = "lstResults"
-        Me.lstResults.Size = New System.Drawing.Size(559, 292)
+        Me.lstResults.Size = New System.Drawing.Size(559, 276)
         Me.lstResults.TabIndex = 13
         '
         'MenuStrip1
@@ -132,6 +146,69 @@ Partial Class frmResult
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(44, 24)
         Me.FileToolStripMenuItem.Text = "File"
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(7, 18)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(44, 17)
+        Me.Label1.TabIndex = 14
+        Me.Label1.Text = "Event"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(80, 18)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(38, 17)
+        Me.Label2.TabIndex = 15
+        Me.Label2.Text = "Date"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(147, 18)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(62, 17)
+        Me.Label3.TabIndex = 16
+        Me.Label3.Text = "Location"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(238, 18)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(76, 17)
+        Me.Label4.TabIndex = 17
+        Me.Label4.Text = "Memner ID"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(343, 18)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(45, 17)
+        Me.Label5.TabIndex = 18
+        Me.Label5.Text = "Name"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(417, 18)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(80, 17)
+        Me.Label6.TabIndex = 19
+        Me.Label6.Text = "Last  Name"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(526, 18)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(39, 17)
+        Me.Label7.TabIndex = 20
+        Me.Label7.Text = "Time"
+        '
         'frmResult
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -147,6 +224,7 @@ Partial Class frmResult
         Me.Text = "Road Warriors - Results"
         Me.grpManResult.ResumeLayout(False)
         Me.grpResults.ResumeLayout(False)
+        Me.grpResults.PerformLayout()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
@@ -164,4 +242,11 @@ Partial Class frmResult
     Friend WithEvents lstResults As ListBox
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label1 As Label
 End Class

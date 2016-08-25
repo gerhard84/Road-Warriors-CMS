@@ -15,10 +15,13 @@ Public Class ResultDB
             Dim row As String = textIn.ReadLine
             Dim columns As String() = row.Split(CChar("|"))
             Dim result As New Result
-            result.MemID = columns(0)
-            result.MemName = columns(1)
-            result.EventName = columns(2)
-            result.RunTime = columns(3)
+            result.EvntName = columns(0)
+            result.EvntDate = columns(1)
+            result.EvntLocation = columns(2)
+            result.MemID = columns(3)
+            result.MemName = columns(4)
+            result.MemSurName = columns(5)
+            result.RunTime = columns(6)
             results.Add(result)
         Loop
 
@@ -34,9 +37,12 @@ Public Class ResultDB
             New FileStream(Path, FileMode.Create, FileAccess.Write))
 
         For Each result As Result In results
+            textOut.Write(result.EvntName & "|")
+            textOut.Write(result.EvntDate & "|")
+            textOut.Write(result.EvntLocation & "|")
             textOut.Write(result.MemID & "|")
             textOut.Write(result.MemName & "|")
-            textOut.Write(result.EventName & "|")
+            textOut.Write(result.MemSurName & "|")
             textOut.Write(result.RunTime)
         Next
 
