@@ -29,11 +29,16 @@ Partial Class frnMain
         Me.btnExit = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DatabaseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.RaceResultsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ManageEventsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ManageMembersToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CreateDatabaseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DeleteDBToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -87,19 +92,14 @@ Partial Class frnMain
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExitToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RaceResultsToolStripMenuItem, Me.ManageEventsToolStripMenuItem, Me.ManageMembersToolStripMenuItem, Me.ExitToolStripMenuItem1})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(44, 24)
         Me.FileToolStripMenuItem.Text = "File"
         '
-        'ExitToolStripMenuItem
-        '
-        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(108, 26)
-        Me.ExitToolStripMenuItem.Text = "Exit"
-        '
         'DatabaseToolStripMenuItem
         '
+        Me.DatabaseToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CreateDatabaseToolStripMenuItem, Me.DeleteDBToolStripMenuItem})
         Me.DatabaseToolStripMenuItem.Name = "DatabaseToolStripMenuItem"
         Me.DatabaseToolStripMenuItem.Size = New System.Drawing.Size(84, 24)
         Me.DatabaseToolStripMenuItem.Text = "Database"
@@ -134,6 +134,42 @@ Partial Class frnMain
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Club Management"
         '
+        'RaceResultsToolStripMenuItem
+        '
+        Me.RaceResultsToolStripMenuItem.Name = "RaceResultsToolStripMenuItem"
+        Me.RaceResultsToolStripMenuItem.Size = New System.Drawing.Size(204, 26)
+        Me.RaceResultsToolStripMenuItem.Text = "Race Results"
+        '
+        'ManageEventsToolStripMenuItem
+        '
+        Me.ManageEventsToolStripMenuItem.Name = "ManageEventsToolStripMenuItem"
+        Me.ManageEventsToolStripMenuItem.Size = New System.Drawing.Size(204, 26)
+        Me.ManageEventsToolStripMenuItem.Text = "Manage Events"
+        '
+        'ManageMembersToolStripMenuItem
+        '
+        Me.ManageMembersToolStripMenuItem.Name = "ManageMembersToolStripMenuItem"
+        Me.ManageMembersToolStripMenuItem.Size = New System.Drawing.Size(204, 26)
+        Me.ManageMembersToolStripMenuItem.Text = "Manage Members"
+        '
+        'ExitToolStripMenuItem1
+        '
+        Me.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
+        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(204, 26)
+        Me.ExitToolStripMenuItem1.Text = "Exit"
+        '
+        'CreateDatabaseToolStripMenuItem
+        '
+        Me.CreateDatabaseToolStripMenuItem.Name = "CreateDatabaseToolStripMenuItem"
+        Me.CreateDatabaseToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.CreateDatabaseToolStripMenuItem.Text = "Create DB"
+        '
+        'DeleteDBToolStripMenuItem
+        '
+        Me.DeleteDBToolStripMenuItem.Name = "DeleteDBToolStripMenuItem"
+        Me.DeleteDBToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.DeleteDBToolStripMenuItem.Text = "Delete DB"
+        '
         'frnMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -162,9 +198,14 @@ Partial Class frnMain
     Friend WithEvents btnExit As Button
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents DatabaseToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents RaceResultsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ManageEventsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ManageMembersToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ExitToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents CreateDatabaseToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents DeleteDBToolStripMenuItem As ToolStripMenuItem
 End Class

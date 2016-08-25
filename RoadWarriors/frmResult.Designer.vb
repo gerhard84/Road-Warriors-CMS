@@ -30,16 +30,23 @@ Partial Class frmResult
         Me.btnExit = New System.Windows.Forms.Button()
         Me.btnManResult = New System.Windows.Forms.Button()
         Me.grpResults = New System.Windows.Forms.GroupBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.lstResults = New System.Windows.Forms.ListBox()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.ManageEventsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ManageMembersToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DatabaseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CreateDatabaseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DeleteDBToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.grpManResult.SuspendLayout()
         Me.grpResults.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
@@ -121,6 +128,69 @@ Partial Class frmResult
         Me.grpResults.TabStop = False
         Me.grpResults.Text = "Results List"
         '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(526, 18)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(39, 17)
+        Me.Label7.TabIndex = 20
+        Me.Label7.Text = "Time"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(417, 18)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(80, 17)
+        Me.Label6.TabIndex = 19
+        Me.Label6.Text = "Last  Name"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(343, 18)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(45, 17)
+        Me.Label5.TabIndex = 18
+        Me.Label5.Text = "Name"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(238, 18)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(76, 17)
+        Me.Label4.TabIndex = 17
+        Me.Label4.Text = "Memner ID"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(147, 18)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(62, 17)
+        Me.Label3.TabIndex = 16
+        Me.Label3.Text = "Location"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(80, 18)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(38, 17)
+        Me.Label2.TabIndex = 15
+        Me.Label2.Text = "Date"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(7, 18)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(44, 17)
+        Me.Label1.TabIndex = 14
+        Me.Label1.Text = "Event"
+        '
         'lstResults
         '
         Me.lstResults.FormattingEnabled = True
@@ -133,7 +203,7 @@ Partial Class frmResult
         'MenuStrip1
         '
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.DatabaseToolStripMenuItem, Me.AboutToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(596, 28)
@@ -142,83 +212,63 @@ Partial Class frmResult
         '
         'FileToolStripMenuItem
         '
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ManageEventsToolStripMenuItem, Me.ManageMembersToolStripMenuItem, Me.ExitToolStripMenuItem1})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(44, 24)
         Me.FileToolStripMenuItem.Text = "File"
         '
-        'Label1
+        'ManageEventsToolStripMenuItem
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(7, 18)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(44, 17)
-        Me.Label1.TabIndex = 14
-        Me.Label1.Text = "Event"
+        Me.ManageEventsToolStripMenuItem.Name = "ManageEventsToolStripMenuItem"
+        Me.ManageEventsToolStripMenuItem.Size = New System.Drawing.Size(204, 26)
+        Me.ManageEventsToolStripMenuItem.Text = "Manage Events"
         '
-        'Label2
+        'ManageMembersToolStripMenuItem
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(80, 18)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(38, 17)
-        Me.Label2.TabIndex = 15
-        Me.Label2.Text = "Date"
+        Me.ManageMembersToolStripMenuItem.Name = "ManageMembersToolStripMenuItem"
+        Me.ManageMembersToolStripMenuItem.Size = New System.Drawing.Size(204, 26)
+        Me.ManageMembersToolStripMenuItem.Text = "Manage Members"
         '
-        'Label3
+        'ExitToolStripMenuItem1
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(147, 18)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(62, 17)
-        Me.Label3.TabIndex = 16
-        Me.Label3.Text = "Location"
+        Me.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1"
+        Me.ExitToolStripMenuItem1.Size = New System.Drawing.Size(204, 26)
+        Me.ExitToolStripMenuItem1.Text = "Exit"
         '
-        'Label4
+        'DatabaseToolStripMenuItem
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(238, 18)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(76, 17)
-        Me.Label4.TabIndex = 17
-        Me.Label4.Text = "Memner ID"
+        Me.DatabaseToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CreateDatabaseToolStripMenuItem, Me.DeleteDBToolStripMenuItem})
+        Me.DatabaseToolStripMenuItem.Name = "DatabaseToolStripMenuItem"
+        Me.DatabaseToolStripMenuItem.Size = New System.Drawing.Size(84, 24)
+        Me.DatabaseToolStripMenuItem.Text = "Database"
         '
-        'Label5
+        'CreateDatabaseToolStripMenuItem
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(343, 18)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(45, 17)
-        Me.Label5.TabIndex = 18
-        Me.Label5.Text = "Name"
+        Me.CreateDatabaseToolStripMenuItem.Name = "CreateDatabaseToolStripMenuItem"
+        Me.CreateDatabaseToolStripMenuItem.Size = New System.Drawing.Size(152, 26)
+        Me.CreateDatabaseToolStripMenuItem.Text = "Create DB"
         '
-        'Label6
+        'DeleteDBToolStripMenuItem
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(417, 18)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(80, 17)
-        Me.Label6.TabIndex = 19
-        Me.Label6.Text = "Last  Name"
+        Me.DeleteDBToolStripMenuItem.Name = "DeleteDBToolStripMenuItem"
+        Me.DeleteDBToolStripMenuItem.Size = New System.Drawing.Size(152, 26)
+        Me.DeleteDBToolStripMenuItem.Text = "Delete DB"
         '
-        'Label7
+        'AboutToolStripMenuItem
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(526, 18)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(39, 17)
-        Me.Label7.TabIndex = 20
-        Me.Label7.Text = "Time"
+        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(62, 24)
+        Me.AboutToolStripMenuItem.Text = "About"
         '
         'frmResult
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(596, 500)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.grpResults)
         Me.Controls.Add(Me.grpManResult)
-        Me.Controls.Add(Me.MenuStrip1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "frmResult"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Road Warriors - Results"
@@ -240,8 +290,6 @@ Partial Class frmResult
     Friend WithEvents btnManResult As Button
     Friend WithEvents grpResults As GroupBox
     Friend WithEvents lstResults As ListBox
-    Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
@@ -249,4 +297,13 @@ Partial Class frmResult
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ManageEventsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ManageMembersToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ExitToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents DatabaseToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CreateDatabaseToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents DeleteDBToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
 End Class
