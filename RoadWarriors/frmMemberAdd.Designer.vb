@@ -208,6 +208,7 @@ Partial Class frmMemberAdd
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "frmMemberAdd"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Road Warriors - Member Add"
         Me.grpNewMem.ResumeLayout(False)
         Me.grpNewMem.PerformLayout()
