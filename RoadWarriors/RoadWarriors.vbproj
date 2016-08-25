@@ -180,6 +180,9 @@
     <EmbeddedResource Include="frmMemberAdd.resx">
       <DependentUpon>frmMemberAdd.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmResultAdd.resx">
+      <DependentUpon>frmResultAdd.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frnMain.resx">
       <DependentUpon>frnMain.vb</DependentUpon>
     </EmbeddedResource>
